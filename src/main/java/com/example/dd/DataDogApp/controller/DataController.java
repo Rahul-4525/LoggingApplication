@@ -14,8 +14,8 @@ public class DataController {
     @GetMapping("/getData")
     public ResponseEntity<String> getData()
     {
-        logger.info("inside get data class");
+        logger.info("path is /getData");
         logger.info("sending data to the client");
-        return ResponseEntity.ok("Hello world!!");
+        return ResponseEntity.ok("Data Sent");
     }
 }
